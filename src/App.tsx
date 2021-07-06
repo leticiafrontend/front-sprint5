@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react';
-import {
-  BrowserRouter as Router, Route, Switch
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
 import Footer from './components/Footer';
-import { GlobalStyle } from "./components/GlobalStyle";
+import { GlobalStyle } from './components/GlobalStyle';
 import Header from './components/Header';
 import Message from './components/Message';
 import Spinner from './components/Spinner';
@@ -40,8 +38,8 @@ function App() {
   function loadCategories() {
     addRequest();
     CategoriesService.get()
-      .then(c => setCategories(c))
-      .catch(() => setMessage("Ocorreu um erro ao carregar as categorias..."))
+      .then((c: any) => setCategories(c))
+      .catch(() => setMessage('Ocorreu um erro ao carregar as categorias...'))
       .finally(() => removeRequest());
   }
 
@@ -49,7 +47,9 @@ function App() {
     <Router>
       <GlobalStyle />
       <FilterContext.Provider value={{ filter, setFilter }}>
-        <LoadingContext.Provider value={{ addRequest, removeRequest, isLoading }}>
+        <LoadingContext.Provider
+          value={{ addRequest, removeRequest, isLoading }}
+        >
           <MessageContext.Provider value={{ message, setMessage }}>
             <CategoriesContext.Provider value={{ categories }}>
               <Spinner></Spinner>
