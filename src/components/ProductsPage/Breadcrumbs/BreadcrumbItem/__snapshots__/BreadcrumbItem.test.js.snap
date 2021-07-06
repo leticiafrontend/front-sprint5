@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Componente de item do breadcrumbs O snapshot do componente deve permanecer sempre o mesmo 1`] = `
+<li
+  class="sc-bdnxRM lbqNSD"
+>
+  <a
+    class="sc-gtsrHT"
+    href="/home"
+  >
+    Home
+  </a>
+</li>
+`;

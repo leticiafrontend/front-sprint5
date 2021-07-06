@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Componente de item do filtro O snapshot do componente deve permanecer sempre o mesmo 1`] = `
+<li
+  class="sc-bdnxRM kYenBY"
+>
+  <span
+    class="sc-gtsrHT bAmSmd"
+  >
+    Tamanho
+  </span>
+  <img
+    class="sc-dlnjwi ckhPXh"
+    src="filter.svg"
+  />
+</li>
+`;
