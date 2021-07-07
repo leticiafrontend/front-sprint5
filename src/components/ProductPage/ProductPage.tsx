@@ -41,10 +41,10 @@ export const ProductPage: React.FC = () => {
 
   useEffect(() => {
     if (products) {
-      if (id >= products.products.length) {
+      if (parseInt(id) >= products.products.length) {
         history.push('/404');
       }
-      setProduct(products.products[id]);
+      setProduct(products.products[parseInt(id)]);
     }
   }, [products]);
 

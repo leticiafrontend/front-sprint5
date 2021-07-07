@@ -4,7 +4,7 @@ import { BreadcrumbItem } from './BreadcrumbItem/BreadcrumbItem';
 import { useCategories } from '../../../hooks/useCategories';
 
 interface PropsBreadcrumbs {
-  id: string;
+  id: number;
   link: string;
   name: string;
 }

@@ -12,7 +12,7 @@ import { useProducts } from '../../hooks/useProducts';
 import { useFilter } from '../../hooks/useFilter';
 
 interface PropsProduct {
-  sku: string;
+  sku: number;
   image: string;
   name: string;
   price: string;
@@ -43,8 +43,8 @@ export const ProductsPage: React.FC = () => {
       <Products>
         <ProductsList>
           {products?.products.length > 0 ? (
-            products.products.map((product: PropsProduct, index: number) => (
-              <Link to={`/product/${index}`}>
+            products.products.map((product: PropsProduct) => (
+              <Link to={`/product/${product.sku - 1}`}>
                 <Product
                   key={product.sku}
                   image={product.image}
