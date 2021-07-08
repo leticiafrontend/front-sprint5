@@ -5,6 +5,7 @@
       "image": "/assets/images/c1.webp",
       "name": "Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a 18",
       "price": "199,90",
+      "color": "branco",
       "sizes": [10, 12, 14, 16, 18]
     },
     {
@@ -12,6 +13,7 @@
       "image": "/assets/images/c2.webp",
       "name": "Camiseta Infantil Manga Curta Super Mario Azul Tam 4 a 10",
       "price": "39,90",
+      "color": "azul",
       "sizes": [4, 6, 8, 10]
     },
     {
@@ -19,6 +21,7 @@
       "image": "/assets/images/c3.webp",
       "name": "Camiseta Infantil Manga Curta Super Mario Branco Tam 4 a 10",
       "price": "49,90",
+      "color": "branco",
       "sizes": [4, 6, 8, 10]
     },
     {
@@ -26,6 +29,7 @@
       "image": "/assets/images/c4.webp",
       "name": "Camiseta Infantil Manga Longa Super Mario Vermelho Tam 4 a 10",
       "price": "49,90",
+      "color": "vermelho",
       "sizes": [4, 6, 8, 10]
     },
     {
@@ -33,6 +37,7 @@
       "image": "/assets/images/c5.webp",
       "name": "Camiseta Juvenil Manga Curta Mario Bros Cinza",
       "price": "39,90",
+      "color": "cinza",
       "sizes": [10, 12, 14, 16, 18]
     },
     {
@@ -40,6 +45,7 @@
       "image": "/assets/images/c6.webp",
       "name": "Camiseta Juvenil Manga Curta Super Mario Azul Tam 10 a 18",
       "price": "39,90",
+      "color": "azul",
       "sizes": [10, 12, 14, 16, 18]
     },
     {
@@ -47,6 +53,7 @@
       "image": "/assets/images/c7.webp",
       "name": "Regata Infantil Mario Bros Branco Tam 4 a 10",
       "price": "29,90",
+      "color": "branco",
       "sizes": [4, 6, 8, 10]
     },
     {
@@ -54,6 +61,7 @@
       "image": "/assets/images/c8.webp",
       "name": "Camiseta Juvenil Manga Curta Super Mario Branco Tam 10 a 18",
       "price": "49,90",
+      "color": "branco",
       "sizes": [10, 12, 14, 16, 18]
     },
     {
@@ -61,6 +69,7 @@
       "image": "/assets/images/c9.webp",
       "name": "Camiseta Infantil Manga Curta Super Star Mario Bros Cinza Mescla Chumbo Tam 4 a 10",
       "price": "39,90",
+      "color": "cinza",
       "sizes": [4, 6, 8, 10]
     },
     {
@@ -68,6 +77,7 @@
       "image": "/assets/images/c10.webp",
       "name": "Blusa de Moletom Juvenil com Capuz Mario Bros Cinza Mescla Tam 10 a 16",
       "price": "149,90",
+      "color": "cinza",
       "sizes": [10, 12, 14, 16]
     },
     {
@@ -75,6 +85,7 @@
       "image": "/assets/images/c11.webp",
       "name": "Camiseta Infantil Manga Curta Mario Bros Vermelho Tam 4 a 10",
       "price": "49,90",
+      "color": "vermelho",
       "sizes": [4, 6, 8, 10]
     },
     {
@@ -82,10 +93,19 @@
       "image": "/assets/images/c12.webp",
       "name": "Camiseta Infantil Manga Curta Mário Bros Vermelha Tam 4 a 10",
       "price": "39,90",
+      "color": "vermelho",
       "sizes": [4, 6, 8, 10]
     }
   ],
   "filters": [
+    {
+      "id": "name",
+      "label": "Nome"
+    },
+    {
+      "id": "price",
+      "label": "Preço"
+    },
     {
       "id": "size",
       "label": "Tamanho"
@@ -93,18 +113,6 @@
     {
       "id": "color",
       "label": "Cor"
-    },
-    {
-      "id": "department",
-      "label": "Departamento"
-    },
-    {
-      "id": "category",
-      "label": "Categoria"
-    },
-    {
-      "id": "sleeve",
-      "label": "Manga"
     }
   ]
 }

@@ -15,7 +15,7 @@ export const Filters: React.FC = () => {
     <Filter>
       <FilterList>
         {products?.filters.map((filter: PropsFilters) => (
-          <FilterItem key={filter.id} label={filter.label} />
+          <FilterItem key={filter.id} option={filter.id} label={filter.label} />
         ))}
       </FilterList>
     </Filter>
