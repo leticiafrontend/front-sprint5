@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Icon, Item, Label } from './style';
 import filter from '../../../../assets/icons/filter.svg';
 import { useProducts } from '../../../../hooks/useProducts';
+import { useFilter } from '../../../../hooks/useFilter';
 
 interface PropsFilterItem {
   label: string;
@@ -10,7 +11,7 @@ interface PropsFilterItem {
 
 export const FilterItem: React.FC<PropsFilterItem> = ({ label, option }) => {
   const { products, setProducts } = useProducts();
-  const [typeSelected, setTypeSelected] = useState<string>('');
+  const { setTypeSelected, typeSelected } = useFilter();
 
   const handleFilter = (option: string) => {
     let reorder: any;
