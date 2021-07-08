@@ -13,43 +13,40 @@ export const FilterItem: React.FC<PropsFilterItem> = ({ label, option }) => {
   const [typeSelected, setTypeSelected] = useState<string>('');
 
   const handleFilter = (option: string) => {
+    let reorder: any;
+
     switch (option) {
       case 'name':
-        const reorderName = products.products.sort((a: any, b: any) => {
+        reorder = products.products.sort((a: any, b: any) => {
           return a.name > b.name ? 1 : a.name < b.name ? -1 : 0;
         });
-        setProducts((prev: any) => ({ ...prev, products: reorderName }));
-        setTypeSelected(option);
         break;
 
       case 'price':
-        const reorderPrice = products.products.sort((a: any, b: any) => {
+        reorder = products.products.sort((a: any, b: any) => {
           return parseInt(a.price) > parseInt(b.price)
             ? 1
             : parseInt(a.price) < parseInt(b.price)
             ? -1
             : 0;
         });
-        setProducts((prev: any) => ({ ...prev, products: reorderPrice }));
-        setTypeSelected(option);
         break;
 
       case 'size':
-        const reorderSize = products.products.sort((a: any, b: any) => {
+        reorder = products.products.sort((a: any, b: any) => {
           return a.sizes < b.sizes ? 1 : a.sizes > b.sizes ? -1 : 0;
         });
-        setProducts((prev: any) => ({ ...prev, products: reorderSize }));
-        setTypeSelected(option);
         break;
 
       case 'color':
-        const reorderColor = products.products.sort((a: any, b: any) => {
+        reorder = products.products.sort((a: any, b: any) => {
           return a.color > b.color ? 1 : a.color < b.color ? -1 : 0;
         });
-        setProducts((prev: any) => ({ ...prev, products: reorderColor }));
-        setTypeSelected(option);
         break;
     }
+
+    setProducts((prev: any) => ({ ...prev, products: reorder }));
+    setTypeSelected(option);
   };
 
   return (
