@@ -3,44 +3,39 @@ import { useLocation } from 'react-router-dom';
 import { useSnackbar } from 'notistack';
 import { useLoading } from '../hooks/useLoading';
 
+interface ProductsP {
+  sku: number;
+  image: string;
+  name: string;
+  price: string;
+  sizes: string[];
+  id: string;
+}
+
+interface ProductsA {
+  sku: number;
+  image: string;
+  name: string;
+  price: string;
+  sizes: string[];
+}
+
+interface Filters {
+  id: string;
+  label: string;
+}
+
 interface PropsProducts {
   products:
     | {
-        products: [
-          {
-            sku: number;
-            image: string;
-            name: string;
-            price: string;
-            sizes: string[];
-            id: string;
-          },
-        ];
-        filters: [
-          {
-            id: string;
-            label: string;
-          },
-        ];
+        products: ProductsP[];
+        filters: Filters[];
       }
     | any;
   all:
     | {
-        products: [
-          {
-            sku: number;
-            image: string;
-            name: string;
-            price: string;
-            sizes: string[];
-          },
-        ];
-        filters: [
-          {
-            id: string;
-            label: string;
-          },
-        ];
+        products: ProductsA[];
+        filters: Filters[];
       }
     | any;
   setProducts: Function;
